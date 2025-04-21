@@ -1,19 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Advanced HTML5 Elements and Forms</title>
-  </head>
-  <body>
+    <title>Advanced HTML5 and Forms</title>
+</head>
+<body>
     <main>
-      <ol type="I">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JAVASCRIPT</li>
-      </ol>
-      <img src="https://www.pexels.com/photo/easter-eggs-in-a-bowl-20821506/" alt="Easter eggs in a bowl">
+        <div>
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ol>
+        </div>
+        <br>
+        <div class="image">
+            <img src="https://www.pexels.com/photo/white-and-grey-kitten-on-brown-and-black-leopard-print-textile-45201/" alt="White cat">
+        </div>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>James Milner</td>
+                    <td>24 Carrington</td>
+                    <td>+44 141 203 5467</td>
+                    <td>jmilner@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Brown Bobbey</td>
+                    <td>45 New Garage</td>
+                    <td>+1 583 405 7965</td>
+                    <td>brownbobbey@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Nate Roberts</td>
+                    <td>45 Yorkshire</td>
+                    <td>+44 723 507 8678</td>
+                    <td>nateroberts@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Carlos Matello</td>
+                    <td>86 Bajulaiye</td>
+                    <td>+234 123 456 7890</td>
+                    <td>bespoke@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Betty Okoye</td>
+                    <td>45 Bajulaiye</td>
+                    <td>+234 709 123 4568</td>
+                    <td>betkey@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!-- Display a form -->
+        <form>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" required id="name" name="name"  placeholder="Enter your name here">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" required id="email" name="email" placeholder="Enter your email here">
+            </div>
+            <br>
+            <div>
+                <label for="pword">Password: </label>
+                <input type="password" required id="pword" placeholder="Enter your password" name="pword">
+            </div>
+            <br>
+            <div>
+                <label for="birthday">Birthday: </label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Sex</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" name="person" id="male">
+                    <br>
+                    <label for="female">Female</label>
+                    <input type="radio" name="person" id="female">
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <p>What means of transport do you use to come to work</p>
+                <input type="checkbox" id="bike" name="transport">
+                <label for="bike">Bike</label><br>
+                <input type="checkbox" id="car" name="transport">
+                <label for="car">Car</label><br>
+                <input type="checkbox" id="truck" name="transport">
+                <label for="truck">Truck</label>
+            </div>
+            <br>
+            <div>
+                <label for="country">Choose yor Country</label>
+                <select name="country" id="country">
+                    <option value="select">--select your country--</option>
+                    <option value="canada">Canada</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="united-kingdom">United Kingdom</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+            <br>
+        </form>
     </main>
-  </body>
+</body>
 </html>
